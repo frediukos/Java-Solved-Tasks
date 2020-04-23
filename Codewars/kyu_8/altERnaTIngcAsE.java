@@ -38,7 +38,7 @@ public class StringUtils {
 
 // or
 
-public class StringUtils {
+/*public class StringUtils {
 
     public static String toAlternativeString(String string) {
         String[] arr = string.split("");
@@ -54,3 +54,5 @@ public class StringUtils {
         return String.join("", arr);
     }
 }
+
+ */
