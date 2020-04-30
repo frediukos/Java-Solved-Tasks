@@ -21,3 +21,38 @@ public class Sum {
     }
 
 }
+
+// or
+
+import java.util.stream.*;
+
+public class Sum {
+
+    public static int arrayPlusArray(int[] arr1, int[] arr2) {
+        return IntStream.of(arr1).sum() + IntStream.of(arr2).sum();
+    }
+
+}
+
+// or
+
+public class Sum {
+
+    public static int arrayPlusArray(int[] arr1, int[] arr2) {
+        int arrSum = 0;
+        for(int num : arr1) {arrSum += num;}
+        for(int num : arr2) {arrSum += num;}
+        return arrSum;
+    }
+
+}
+
+// or
+
+public class Sum {
+
+    public static int arrayPlusArray(int[] arr1, int[] arr2) {
+        return Stream.of(arr1, arr2).flatMapToInt(Arrays::stream).sum();
+    }
+
+}
