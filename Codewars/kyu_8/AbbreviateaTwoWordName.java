@@ -13,7 +13,7 @@ Patrick Feeney => P.F
 FUNDAMENTALS   STRINGS   ARRAYS
  */
 
-//package kyu_8;
+package kyu_8;
 
 public class AbbreviateTwoWords {
 
